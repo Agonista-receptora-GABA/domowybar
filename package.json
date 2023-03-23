@@ -1,0 +1,19 @@
+{
+  "name": "domowybar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agonista-receptora-GABA/domowybar.git"
+  },
+  "author": "Adrian Niechciał <adrian.niechcial@tutanota.com>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/Agonista-receptora-GABA/domowybar/issues"
+  },
+  "homepage": "https://github.com/Agonista-receptora-GABA/domowybar#readme"
+}
