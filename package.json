@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "compile:watch": "npx tailwindcss -i ./styles.css -o ./dist/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Agonista-receptora-GABA/domowybar/issues"
   },
-  "homepage": "https://github.com/Agonista-receptora-GABA/domowybar#readme"
+  "homepage": "https://github.com/Agonista-receptora-GABA/domowybar#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
 }

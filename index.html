@@ -7,55 +7,64 @@
   <title>
     Domowy Bar | blog dla domowych barmanów, baristów, herbaciarzy, yerbiarzy i kucharzy
   </title>
+  <link href="./dist/styles.css" rel="stylesheet" />
 </head>
-<body>
-  <header>
-    <h1>Domowy Bar</h1>
+<body class="bg-slate-10 text-slate-600">
+  <header class="flex items-center h-24 mb-8 bg-orange-100 bg-gradient-to-r from-lime-100 to-orange-100 text-orange-700">
+    <h1 class="container mx-auto px-2 text-xl font-bold">
+      <span aria-hidden="true" class="relative inline-flex content-center text-4xl" style="transform: scale(1.5);">
+        ⌂
+        <span class="absolute top-0 left-0 text-xl font-light" style="transform: translateX(70%); margin-top: -0.5em;">┯</span>
+      </span>
+      <p class="absolute top-4 ml-8 mb-8" style="transform: rotate(-3deg); transform-origin: left; letter-spacing: 0.125em;">Domowy Bar</span>
+    </h1>
   </header>
-  <main>
-    <p>
+  <main class="container mx-auto px-2">
+    <p class="pt-2">
       Witam na stronie Domowego Baru, czyli inicjatywy powstałej dla wszystkich, którzy lubią raczyć się czymś dobrym
       w domowym zaciszu (lub poza nim).
     </p>
     <section>
-      <h2>Dla kogo jest to blog?</h2>
-      <p>
-        Dla wszystkich! Zapraszam nie tylko domowych amatorów wytwarzania i degusowania pysznych napojów i jedzenia,
+      <h2 class="pt-4 text-2xl font-bold">Dla kogo jest to blog?</h2>
+      <p class="pt-2"></p>
+        Dla wszystkich! Zapraszam nie tylko domowych amatorów wytwarzania i degustowania pysznych napojów i jedzenia,
         ale również osoby czynne zawodowo. Jestem otwarty na współpracę i krytykę.
       </p>
     </section>
     <section>
-      <h2>O czym tu będę pisał?</h2>
-      <p>
+      <h2 class="pt-4 text-2xl font-bold">O czym tu będę pisał?</h2>
+      <p class="pt-2"></p>
         Mam zamiar pisać tutaj artykuły poświęcone różnym koktajlom, alkoholom (i ogólnie napojom), kulturze i kulturom
         picia.
       </p>
-      <p>
+      <p class="pt-2"></p>
         Chciałbym dzielić się swoją wiedzą, wymieniać doświadczenia oraz mieć miejsce w Sieci, w którym odcisnę ślad nie
         tylko dla innych, ale i dla siebie: tak, aby móc śledzić swoje postępy.
       </p>
-      <p>
+      <p class="pt-2"></p>
         Z czasem, mam nadzieję, pojawią się także:
       </p>
-      <ul>
+      <ul class="list-disc pt-2 pl-6">
         <li>recenzje barów, kawiarni, herbaciarni i restauracji</li>
         <li>moje próby wytwarzania domowych przetworów, nalewek i napojów fermentowanych</li>
         <li>może kiedyś: własny sklep z akcesoriami barmańskimi</li>
       </ul>
     </section>
     <section>
-      <h2>Kto jest autorem tego bloga?</h2>
-      <p>
+      <h2 class="pt-4 text-2xl font-bold">Kto jest autorem tego bloga?</h2>
+      <p class="pt-2">
         Ja, czyli Adrian. Jeśli chcesz się ze mną skontaktować, zapraszam na:
       </p>
-      <ul>
-        <li>e-mail <a href="mailto: adrian.niechcial@tutanota.com">adrian.niechcial@tutanota.com</a> (dla tradycjonalistów)</li>
-        <li>konto <a href="https://www.instagram.com/jowialny.kontuar/">@jowialny.kontuar</a> (dla instagramowiczów)</li>
+      <ul class="list-disc pt-2 pl-6">
+        <li>e-mail <a href="mailto: adrian.niechcial@tutanota.com" class="text-blue-500 font-bold">adrian.niechcial@tutanota.com</a> (dla tradycjonalistów)</li>
+        <li>konto <a href="https://www.instagram.com/jowialny.kontuar/" class="text-blue-500 font-bold">@jowialny.kontuar</a> (dla instagramowiczów)</li>
       </ul>
     </section>
   </main>
-  <footer>
-    &#169; Domowy Bar. Wszelkie prawa zastrzeżone.
+  <footer class="flex items-end h-14 mt-8 bg-slate-100">
+    <p class="container mx-auto px-2 py-2">
+      &#169; Domowy Bar. Wszelkie prawa zastrzeżone.
+    </p>
   </footer>
 </body>
 </html>
