@@ -8,6 +8,7 @@
     Strona główna — Domowy Bar | blog dla domowych barmanów, baristów, herbaciarzy, yerbiarzy i kucharzy
   </title>
   <link href="/dist/styles.css" rel="stylesheet" />
+  <script src="/adi-custom-elements.js"></script>
 </head>
 <body class="bg-slate-10 text-slate-600">
   <header class="h-24"
@@ -35,30 +36,7 @@
       </a>
     </h1>
   </header>
-  <nav class="bg-slate-50 mb-8 border-b-4 border-slate-100 text-sm font-bold">
-    <ul class="container mx-auto px-2 flex flex-col md:flex-row uppercase tracking-wide">
-      <li class="flex border-r-2 border-slate-100">
-        <a href="/porady" title="Zobacz artykuły z poradami" class="w-full px-8 py-2 hover:bg-slate-100">
-          Porady
-        </a>
-      </li>
-      <li class="flex border-r-2 border-slate-100">
-        <a href="/koktajle" title="Zobacz galerię koktajli" class="w-full px-8 py-2 hover:bg-slate-100">
-          Koktajle
-        </a>
-      </li>
-      <li class="flex border-r-2 border-slate-100">
-        <a href="/recenzje" title="Zobacz recenzje" class="w-full px-8 py-2 hover:bg-slate-100">
-          Recenzje
-        </a>
-      </li>
-      <li class="flex">
-        <a href="/o-blogu-i-autorze.html" title="Zobacz informacje o blogu i autorze" class="w-full px-8 py-2 hover:bg-slate-100">
-          O blogu i autorze
-        </a>
-      </li>
-    </ul>
-  </nav>
+  <adi-main-nav></adi-main-nav>
   <main class="container mx-auto px-2">
     <p class="pt-2">
       Witam na stronie Domowego Baru, czyli inicjatywy powstałej dla wszystkich, którzy lubią raczyć się czymś dobrym
