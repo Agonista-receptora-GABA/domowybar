@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="418 -51.39488 800 800" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <g id="document" fill="#000000" fill-rule="nonzero" stroke="#000000" stroke-width="0" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal;" transform="matrix(1.142857, 0, 0, 1.142857, -59.714143, -82.251947)" bx:origin="0.478757 0.5">
+    <rect x="418" y="19.28571" transform="scale(1,1.4)" width="700" height="500" id="Shape 1 1" vector-effect="non-scaling-stroke"/>
+  </g>
+  <g fill="none" fill-rule="nonzero" stroke="#ffffff" stroke-width="none" stroke-linecap="none" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal" transform="matrix(1, 0, 0, 1, 53.591977, -34.57333)">
+    <g id="Group 1" stroke-linejoin="none">
+      <rect x="257.92924" y="58.69429" transform="scale(2.53793,2.53793)" width="85.923" height="11.578" id="Shape 1" fill="#ffffff" stroke-width="1" stroke-linecap="none"/>
+      <g id="Group 1" fill="#ffffff" stroke-width="1" stroke-linecap="none">
+        <rect x="298.97573" y="64.39685" transform="scale(2.53793,2.53793)" width="6.094" height="62.157" id="Shape 1"/>
+      </g>
+      <path d="M637.7007,425.28894l128.75163,-118.53393l124.66303,120.57697v190.06036l-251.37163,0.00254z" id="Path 1" fill="none" stroke-width="8" stroke-linecap="square"/>
+    </g>
+  </g>
+</svg>
