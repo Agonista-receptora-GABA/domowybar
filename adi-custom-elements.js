@@ -27,7 +27,7 @@ class AdiMainNav extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = `<nav class="bg-slate-50 mb-8 border-b-4 border-slate-100 text-sm font-bold">
+    this.innerHTML = `<nav class="bg-slate-50 mb-8 border-b-4 border-slate-100 text-sm font-bold font-serif">
       <ul class="container mx-auto px-2 flex flex-col md:flex-row uppercase tracking-wide">
         ${navElements.map((item, i) => {
           return `<li class="${`flex ${i === navElements.length-1 ? '' : 'border-r-2 border-slate-100'}`.trim()}">
