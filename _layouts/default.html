@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{ page.title }} — Domowy Bar | blog dla domowych barmanów, baristów, herbaciarzy, yerbiarzy i kucharzy
+  </title>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="/dist/styles.css" rel="stylesheet" />
+</head>
+<body class="bg-slate-10 text-slate-600">
+  <img alt="Trwa ładowanie nagłówka" height="96" width="1" id="header-placeholder">
+  <adi-main-header></adi-main-header>
+  <adi-main-nav></adi-main-nav>
+  <main class="container mx-auto px-2">
+    {{ content }}
+  </main>
+  <footer class="flex items-end h-14 mt-8 bg-slate-100">
+    <p class="container mx-auto px-2 py-2">
+      &#169; Domowy Bar. Wszelkie prawa zastrzeżone.
+    </p>
+  </footer>
+  <script src="/adi-custom-elements.js"></script>
+</body>
+</html>
