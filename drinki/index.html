@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Koktajle
+title: Drinki
 ---
 <p class="pt-2">
   Kolejna strona Domowego Baru, tym razem z koktajlami/drinkami. Znajdziesz tutaj:
@@ -17,4 +16,12 @@ title: Koktajle
     <strong>drink na każdą okazję</strong>
   </li>
   <li>zdjęcia koktajli mojego autorstwa</li>
+</ul>
+<h2 class="pt-4 text-xl font-bold font-serif">Posty</h2>
+<ul class="pt-2">
+  {% for post in site.posts %}
+    <li>
+      <h3><a href="{{ post.url }}" class="text-blue-600 font-bold" title="Kliknij, aby otworzyć post pt. {{ post.title }}">{{ post.title }}</a></h3>
+    </li>
+  {% endfor %}
 </ul>

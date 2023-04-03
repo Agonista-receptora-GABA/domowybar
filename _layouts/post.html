@@ -1,0 +1,91 @@
+---
+layout: default
+---
+{% assign author = site.authors | where: 'short_name', page.author | first %}
+<main class="container mx-auto px-2" property="mainEntityOfPage" tabindex="-1">
+  <article class="post h-entry" property="blogPost" vocab="http://schema.org" typeof="BlogPosting" id="margarita-przepis">
+    <header>
+      <h1 property="headline">
+        <a href="{{ page.url }}" class="pt-4 text-2xl font-bold font-serif" rel="bookmark" title="Permalink do {{ page.title }}">
+          {{ page.title }}
+        </a>
+      </h1>
+      <p>
+        Opublikowano
+        <time datetime="{{ page.date | date_to_xmlschema }}" class="pt-2 font-bold" property="datePublished">
+          {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d" }}
+          {% case m %}
+            {% when '1' %}stycznia
+            {% when '2' %}lutego
+            {% when '3' %}marca
+            {% when '4' %}kwietnia
+            {% when '5' %}maja
+            {% when '6' %}czerwca
+            {% when '7' %}lipca
+            {% when '8' %}sierpnia
+            {% when '9' %}września
+            {% when '10' %}października
+            {% when '11' %}listopada
+            {% when '12' %}grudnia
+          {% endcase %}
+          {{ page.date | date: "%Y" }}
+        </time>
+        przez:
+        <a href="{{ author.url }}" property="author" vocab="http://schema.org" typeof="Person" rel="author" class="text-blue-600 font-bold">
+          <span property="name">
+            {{ author.name }}
+          </span>
+        </a>
+      </p>
+    </header>
+    <div property="articleBody">
+      {{ content }}
+    </div>
+    <!-- TODO: Manage tags, see: https://blog.lunarlogic.com/2019/managing-tags-in-jekyll-blog-easily/ -->
+    <!-- <footer>
+      <section id="tagi" class="" property="articleSection">
+        <h2 class="pt-4 text-xl font-bold font-serif">Tagi</h2>
+          <ul>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-na-tequili" rel="tag" class="">koktajle na tequili</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-kwasne" rel="tag" class="">koktajle kwaśne</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-z-cytrusami" rel="tag" class="">koktajle z cytrusami</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-kultowe" rel="tag" class="">koktajle kultowe</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-wstrzasane" rel="tag" class="">koktajle wstrząsane</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-z-crusta" rel="tag" class="">koktajle z crustą</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-zielone" rel="tag" class="">koktajle zielone</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-z-limonka" rel="tag" class="">koktajle z limonką</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-na-sloneczna-pogode" rel="tag" class="">koktajle na słoneczną pogodę</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-przed-posilkiem" rel="tag" class="">koktajle przed posiłkiem</a>
+            </li>
+            <li>
+              <a href="https://domowybar.pl/tag/koktajle-z-triple-sec" rel="tag" class="">koktajle z Triple Sec</a>
+            </li>
+          </ul>
+      </section>
+    </footer> -->
+    <section id="komentarze">
+      <h2 class="pt-4 text-xl font-bold font-serif">Komentarze</h2>
+      <adi-comments></adi-comments>
+    </section>
+  </article>
+</main>

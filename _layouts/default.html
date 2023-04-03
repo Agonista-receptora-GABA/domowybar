@@ -12,8 +12,7 @@
   <link href="/dist/styles.css" rel="stylesheet" />
 </head>
 <body class="bg-slate-10 text-slate-600">
-  <img alt="Trwa ładowanie nagłówka" height="96" width="1" id="header-placeholder">
-  <adi-main-header></adi-main-header>
+  {% include site-header.html %}
   <adi-main-nav></adi-main-nav>
   <main class="container mx-auto px-2">
     {{ content }}

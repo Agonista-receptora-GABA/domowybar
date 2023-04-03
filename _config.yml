@@ -1,0 +1,23 @@
+collections:
+  authors:
+    output: true
+    permalink: /kontakt/:title
+
+permalink: /:categories/:title
+
+defaults:
+  -
+    scope:
+      type: pages
+    values:
+      layout: default
+  -
+    scope:
+      type: authors
+    values:
+      layout: author
+  -
+    scope:
+      type: posts
+    values:
+      layout: post

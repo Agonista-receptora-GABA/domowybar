@@ -1,6 +1,5 @@
 ---
-layout: default
-title: O blogu i autorze
+title: O blogu i autorach
 ---
 <p class="pt-2">
   Cieszę się, że tu jesteś. Rozgość się i przeczytaj sobie na spokojnie, z czym to się je.
@@ -39,5 +38,17 @@ title: O blogu i autorze
   <ul class="list-disc pt-2 pl-6">
     <li>e-mail <a href="mailto: adrian.niechcial@tutanota.com" class="text-blue-600 font-bold">adrian.niechcial@tutanota.com</a> (dla tradycjonalistów)</li>
     <li>konto <a href="https://www.instagram.com/jowialny.kontuar/" class="text-blue-600 font-bold">@jowialny.kontuar</a> (dla instagramowiczów)</li>
+  </ul>
+</section>
+<section>
+  <h2 class="pt-4 text-2xl font-bold font-serif">Czy są jeszcze inni autorzy?</h2>
+  <p class="pt-2">Oto aktualna lista autorów bloga.</p>
+  <ul class="pt-2">
+    {% for author in site.authors %}
+      <li>
+        <h3 class="text-blue-600 font-bold"><a href="{{ author.url }}">{{ author.name }}</a></h3>
+        <p>{{ author.position }}</p>
+      </li>
+    {% endfor %}
   </ul>
 </section>
